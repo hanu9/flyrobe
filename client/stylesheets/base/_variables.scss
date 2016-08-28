@@ -1,0 +1,37 @@
+$font-family-sans-serif:  "HelveticaNeue", Helvetica, Arial, sans-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+$font-size-base:          14px !default;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+$text-color:              #000 !default;
+//** Background color for `<body>`.
+$body-bg:                 #fff !default;
+//** Global textual link color.
+$brand-primary:           #000 !default;
+$link-color:              $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:        darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration:   underline !default;
+
+
+
+
+$primary-color: #00ba63;
+$text-primary: #4a4a4a;
+//container
+$container-min-width: 768px;
+$container-max-width: 1168px;
+// gutter srp
+$gutter-default: 50px;
+$gutter-column: 32px;
+$gutter-srp-product: 16px;
+//default card
+$card-border-radius: 6px;
+$card-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+//bundle gaps
+$bundle-gap: 30px;
+
+$mar10: 10px;
+
+$cart-col: #16b966;   //green

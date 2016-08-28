@@ -1,0 +1,33 @@
+{
+  "name": "Flyrobe",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=Flyrobe:* nodemon ./bin/www",
+    "validate": "npm-run-all --parallel validate-webpack lint",
+    "validate-webpack": "webpack-validator webpack.config.js",
+    "lint": "eslint .",
+    "clean-public": "rimraf public"
+  },
+  "author": "hanu",
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "html-minifier": "^2.1.5",
+    "morgan": "~1.7.0",
+    "nunjucks": "^2.4.2",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.4.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^3.2.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}

@@ -1,0 +1,11 @@
+%obfuscator{
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: background-color .2s cubic-bezier(.4,0,.2,1);
+  transition: background-color .2s cubic-bezier(.4,0,.2,1);
+}

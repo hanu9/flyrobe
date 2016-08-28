@@ -1,0 +1,63 @@
+.aside{
+  letter-spacing: 0.2rem;
+  max-width: 180px;
+  @media screen and ( max-width : 767px ) {
+    display: none;
+  }
+  &__header{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'HelveticaNeueMedium';
+    margin-bottom: 25px;
+  }
+  &__list{
+    &-item{
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      margin-bottom: 15px;
+      font-family: 'HelveticaNeueMedium';
+      & > a{
+        display: block;
+        padding-bottom: 8px;
+        position: relative;
+        &:after{
+          content: "";
+          width: 30px;
+          border-bottom: 1px solid #000;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      //states
+      &--empty{
+        & > a{
+          padding-bottom: 0;
+          &:after{
+            content: none;
+          }
+        }
+      }
+      &--em{
+        & > a{
+          font-style: italic;
+          padding-bottom: 0;
+          text-transform: capitalize;
+          &:after{
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  &__sublist{
+    font-family: 'HelveticaNeueLight';
+    font-size: 1rem;
+    margin-top: 10px;
+    li{
+      margin-bottom: 5px;
+    }
+  }
+}

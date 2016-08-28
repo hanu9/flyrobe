@@ -1,0 +1,25 @@
+/// Helper mixin to create dropdown arrow
+/// @param {Number} $border - Border Width
+/// @param {Color} $color - Color of dropdown arrow
+/// @param {Color} $bgcolor - Color same of parent background color
+/// @param {Number} $top - position from top
+/// @param {Number} $top - position from right
+@mixin dropdown($border,$color,$bgcolor,$top,$right,$width:1) {
+  &:before,&:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: $border solid transparent;
+    border-right: $border solid transparent;
+    border-top: $border solid $color;
+    border-bottom: 0;
+    position: absolute;
+    top: $top;
+    right: $right;
+    border-radius: 2px;
+  }
+  &:after{
+    top: ($top - $width);
+    border-top-color: $bgcolor;
+  }
+}

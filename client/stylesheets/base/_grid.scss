@@ -1,0 +1,62 @@
+// flex grid
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex__row{
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex__column{
+  display: flex;
+  flex-flow: column;
+}
+.flex-space{
+  margin: 0 -10px;
+  .flex__column, .flex__item{
+    padding: 0 10px;
+  }
+}
+.flex-sm-100{
+  width: 100%;
+}
+.flex-sm-75{
+  width: 75%;
+}
+.flex-sm-66{
+  width: 66.666667%;
+}
+.flex-sm-50{
+  width: 50%;
+}
+.flex-sm-33{
+  width: 33.333333%;
+}
+.flex-sm-25{
+  width: 25%;
+}
+@media screen and (min-width: 768px) {
+  .flex-lg-100{
+    width: 100%;
+  }
+  .flex-lg-75{
+    width: 75%;
+  }
+  .flex-lg-66{
+    width: 66.666667%;
+  }
+  .flex-lg-50{
+    width: 50%;
+  }
+  .flex-lg-33{
+    width: 33.333333%;
+  }
+  .flex-lg-25{
+    width: 25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hidden-sm{
+    display: none;
+  }
+}

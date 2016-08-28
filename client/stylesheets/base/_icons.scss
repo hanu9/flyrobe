@@ -1,0 +1,25 @@
+.icon{
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url("../images/sprite-main.png");
+  font-style: normal;
+  &__search{
+    background-position: -233px -79px;
+    @include scale(0.5,0.5);
+  }
+  &__favourite{
+    background-position: -279px -79px;
+    @include scale(0.5,0.5);
+  }
+  &__bag{
+    background-position: -325px -79px;
+    @include scale(0.5,0.5);
+  }
+  &__gplay{
+    width: 74px;
+    height: 80px;
+    background-position: -77px 0;
+    @include scale(0.4,0.4);
+  }
+}

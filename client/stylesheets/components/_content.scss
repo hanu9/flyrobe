@@ -1,0 +1,21 @@
+.content{
+  padding: 20px 0 30px;
+  @media screen and ( max-width : 767px ) {
+    padding-top: 0;
+  }
+  &__body{
+    padding-left: 200px;
+    position: relative;
+    @media screen and ( max-width : 767px ) {
+      padding-left: 0;
+    }
+  }
+  &__aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &__section{
+
+  }
+}

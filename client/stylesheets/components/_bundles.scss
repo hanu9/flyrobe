@@ -1,0 +1,102 @@
+.bundle{
+  margin-bottom: 10px;
+  & + &{
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding-top: 25px;
+  }
+}
+.bundle__header{
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+  h2{
+    position: relative;
+    line-height: 1;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-family: 'HelveticaNeueMedium';
+    &:after{
+      content: "";
+      position: absolute;
+      width: 30px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -15px;
+      border-bottom: 1px solid #000;
+    }
+  }
+  span{
+    font-size: 1rem;
+    display: block;
+    margin-top: 10px;
+    font-family: 'HelveticaNeueLight';
+    & ~ h2{
+      &:after{
+        content: none;
+      }
+    }
+  }
+}
+.bundle__categories{
+  margin-bottom: 20px;
+  & + .bundle{
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+@media screen and ( max-width : 767px ) {
+  .bundle__categories{
+    margin-bottom: 15px;
+    .img-placeholder{
+      display: none;
+    }
+    .figure__caption{
+      height: auto;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #000;
+      h2{
+        margin: 0;
+        line-height: 1;
+      }
+      span{
+        display: none;
+      }
+      &--center{
+        position: relative;
+        width: inherit;
+      }
+    }
+  }
+  .bundle__designers{
+    .flex__item:nth-child(3){
+      order: 4;
+    }
+  }
+  .bundle__instagram{
+    .flex__column:nth-child(3){
+      order: 4;
+    }
+    .flex__column:nth-child(4){
+      order: 3;
+    }
+    .flex__column:nth-child(5){
+      order: 6;
+    }
+    .flex__column:nth-child(6){
+      order: 5;
+    }
+    .flex__column:nth-child(7){
+      order: 7;
+    }
+    .flex__column:nth-child(8){
+      order: 8;
+    }
+  }
+  .bundle__trends{
+    .flex__item:first-child{
+      order: 2;
+    }
+  }
+}

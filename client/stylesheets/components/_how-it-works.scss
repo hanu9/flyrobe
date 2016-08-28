@@ -1,0 +1,21 @@
+.how-it-works{
+  justify-content: space-between;
+  margin: 30px 0;
+  @media screen and ( max-width : 767px ) {
+    display: none;
+  }
+  .figure{
+    width: 200px;
+    &__caption{
+      text-align: center;
+      margin-bottom: 0;
+      h2{
+        margin-bottom: 15px;
+      }
+      span{
+        letter-spacing: 0.15rem;
+        display: block;
+      }
+    }
+  }
+}

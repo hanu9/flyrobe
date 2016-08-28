@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>F L Y R O B E</title>
+
+    <link rel="stylesheet" href="/static/{{assets_config.main.css}}" media="screen" title="no title" charset="utf-8">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="header header-sm-fixed js-header">
+      <div class="header__top">
+        <div class="">
+          <ul class="inline-list">
+            <li>Call Us +919876543210</li>
+            <li><a href="#">Offers</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="inline-list">
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Download App</a></li>
+            <li><a href="#">Home Trial</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar container">
+        <button class="navbar__toggle js-navbar-menu-button" type="button"><span class="navbar__toggle-bar"></span></button>
+        <a href="/" class="navbar__logo"><img src="/static/logo.png" alt="" class="img-responsive"/></a>
+        <ul class="navbar__list">
+          <li><a href="#">Women</a></li>
+          <li><a href="#" class="active">Men</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Quality</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <ul class="navbar__right">
+          <li class="navbar__right-search"><i class="icon icon__search"></i></li>
+          <li><i class="icon icon__favourite"></i></li>
+          <li><i class="icon icon__bag badge" data-number="2"></i></li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="navbar__drawer js-navbar-main">
+      <ul class="navbar__drawer-list">
+        <li><a href="/"><i class="home-icon"></i> Home</a></li>
+        <li>
+          <a href="#"><i class="account-icon"></i> Login / Signup</a>
+          <a href="#" class="hidden"><i class="myorder-icon"></i> My Orders</a>
+        </li>
+        <li><a href="javascript:void(0)" class="hidden"><img src="" alt="" width="25" height="25" class="navbar__drawer-icon"/>Logout</a></li>
+        <li><a href="#"><i class="navbar-cart-icon"></i> My Cart <i class="badge" data-number="2"></i></a></li>
+      </ul>
+      <section class="navbar__drawer-categories">
+        <header class="navbar__drawer-heading">
+          Categories
+        </header>
+        <ul class="navbar__drawer-list">
+          <li class="dropdown">
+            <a href="#">
+              Women
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Sub Cat 1</a></li>
+                <li><a href="#">Sub Cat 2</a></li>
+                <li><a href="#">Sub Cat 3</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">
+              Men
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Sub Cat 1</a></li>
+                <li><a href="#">Sub Cat 2</a></li>
+                <li><a href="#">Sub Cat 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <div class="navbar__obfuscator js-navbar-mask"></div>
+    <section class="content">
+      {% block content %}{% endblock %}
+    </section>
+    <footer class="footer">
+      <div class="footer__links">
+        <div class="container">
+          <ul class="flex__row">
+            <li class="flex__item flex-sm-100 flex-lg-25">
+              <h2>Discover Our App</h2>
+              <ul class="flex__column">
+                <li><a href="#" class="flex__row social-stores"><i class="icon icon__gplay"></i><div><span>Get it on</span>Google Play</div></a></li>
+                <li><a href="#" class="flex__row social-stores"><i class="icon icon__gplay"></i><div><span>Download the</span>App Store</div></a></li>
+              </ul>
+            </li>
+            <li class="flex__item hidden-sm flex-lg-25">
+              <h2>Help</h2>
+              <ul class="flex__column">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms of Use | Privacy Policy</a></li>
+              </ul>
+            </li>
+            <li class="flex__item hidden-sm flex-lg-25">
+              <h2>Flyrobe</h2>
+              <ul class="flex__column">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Quality</a></li>
+                <li><a href="#">Customers Diaries</a></li>
+                <li><a href="#">Home Trial</a></li>
+              </ul>
+            </li>
+            <li class="flex__item flex-sm-100 flex-lg-25 hidden-sm">
+              <h2>Be Social</h2>
+              <ul class="flex__row">
+                <li class="flex__item"><a href="#"></a></li>
+                <li class="flex__item"><a href="#"></a></li>
+                <li class="flex__item"><a href="#"></a></li>
+                <li class="flex__item"><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container text-center">
+        <ul class="footer__howitworks flex__row hidden-sm">
+          <li class="flex__item"><img src="" alt="" />Cash on Delivery</li>
+          <li class="flex__item"><img src="" alt="" />3 Hours Returns</li>
+          <li class="flex__item"><img src="" alt="" />Free Shiping</li>
+        </ul>
+        <div class="footer__copyright">
+          Copyright &copy; 2016 flyrobe.com. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="/static/{{assets_config.main.js}}"></script>
+  </body>
+</html>
